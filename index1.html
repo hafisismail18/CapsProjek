@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Foto</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-ornament.png'); /* Gambar latar belakang ornamen */
+    background-color: #FDE3A7;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 500%;
+    color: #3498db;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .gallery-item:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .image-caption {
+    text-align: center;
+    font-size: large;
+    /* margin-top: 10px; */
+  }
+  .custom-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3;
+  }
+
+  .custom-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); /* Example: Enlarge the link on hover */
+  }
+
+  /* Center the button at the top */
+  .top-center-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+ 
+
+</style>
+
+</head>
+<body>
+  <div class="title">Selamat Ulang Tahun </div>  
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="c:\Apis\Galery\lv\IMG_20230827_041950_750.jpg" alt="Gambar 1">
+      <div class="image-overlay">
+        <div class="image-caption">
+          <p>SELAMAT</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="c:\Users\Kadek\Downloads\Cerita Anda Ulang Tahun Banyak Foto Scrapbook Keren Violet.jpg" alt="Gambar 2">
+      <div class="image-overlay">
+        <div class="image-caption">
+          <p>ULANG</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="c:\Apis\Galery\lv\IMG_20230822_194447_255.jpg" alt="Gambar 3">
+      <div class="image-overlay">
+        <div class="image-caption">
+          <p>TAHUN</p>
+        </div>
+      </div>
+    </div>
+    <!-- Tambahkan lebih banyak galeri item di sini -->
+  </div>
+</body>
+<body>
+    <!-- ... (existing gallery code) ... -->
+    
+    <!-- Centered container for the button at the top -->
+    <div class="top-center-container">
+      <a href="index2.html" ><button type="submit"class="custom-button">Klik Dong</button></a>
+    </div>
+  </body>
+</html>
